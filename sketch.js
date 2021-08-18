@@ -20,7 +20,7 @@ function preload()
   sunL = loadImage("sunrays1.png");
   bg = loadImage("bgimage.png")
   s_pan = loadImage("s_panel.png");
-  fan_anim = loadAnimation("fan01.png","fan02.png","fan03.png","fan04.png","fan05.png");
+ 
   fan_anim.play = false;
   fan_img = loadImage("fan01.png");
   display = loadImage("disp.png");
@@ -65,8 +65,6 @@ function draw()
 {
   background(220);
   
-  image(bg,0,0,width,height);
-  image(display,600,10,200,60)
   power_gen = panel1_voltage + panel2_voltage
   
   push();
@@ -79,7 +77,7 @@ function draw()
   text(temp,710,56);
   pop();
   
-  makeRay();
+ 
   drawSprites();  
 }
 
