@@ -13,7 +13,7 @@ var panel1_voltage =0;
 var panel2_voltage = 0;
 var power_gen = 0;
 
-//BP
+
 function preload()
 {
   sunR = loadImage("sunrays.png");
@@ -25,8 +25,12 @@ function preload()
   fan_img = loadImage("fan01.png");
   display = loadImage("disp.png");
   g_house_img = loadImage("greenhouse.png")
+  
+  //Add animation for moving Fan
+  
+  
 }
-//BP
+
 function setup() 
 {
   createCanvas(800, 500);
@@ -64,6 +68,10 @@ function setup()
 function draw() 
 {
   background(220);
+
+  //Add Images for Background & Panel
+  
+  
   
   power_gen = panel1_voltage + panel2_voltage
   
